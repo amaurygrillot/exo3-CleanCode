@@ -14,4 +14,8 @@ public class TextDisplayManager {
     public void displaySubtotal(String operation, int subtotal) {
         this.print("Resultat de l'opération " + operation + " : " + subtotal);
     }
+
+    public void displayTotal(int total) {
+        this.print("Resultat final : " + total);
+    }
 }

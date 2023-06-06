@@ -23,5 +23,26 @@ public class Main {
                 textDisplayManager.displaySubtotal(operation, subtotal);
             }
         }
+        else if(operation.equals("+"))
+        {
+            subtotal = 1;
+            for (String line: allLines)
+            {
+                int lineInt = Integer.parseInt(line);
+                subtotal = subtotal + lineInt;
+                textDisplayManager.displaySubtotal(operation, subtotal);
+            }
+        }
+        else if(operation.equals("-"))
+        {
+            subtotal = 1;
+            for (String line: allLines)
+            {
+                int lineInt = Integer.parseInt(line);
+                subtotal = subtotal - lineInt;
+                textDisplayManager.displaySubtotal(operation, subtotal);
+            }
+        }
+        textDisplayManager.displayTotal(subtotal);
     }
 }
